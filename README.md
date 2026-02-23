@@ -1,26 +1,23 @@
-# 🔐 AES File Locker
+# 🔐 AES FILE LOCKER SYSTEM
 
-A Cryptography project - Building a high-level data security tool using Python.
+Cryptography Project - Building a high-level data security tool using Python.
 
 ## 🚀 Core Features
-- **Military-Grade Encryption:** Utilizes the `AES-256-CBC` standard.
-- **Tamper Resistance (Data Integrity):** Implements the `Encrypt-then-MAC` architecture with `HMAC-SHA256` signatures.
-- **Anti-Brute-Force:** Key derivation using `PBKDF2` with 1,000,000 iterations.
-- **True Locker Mechanism:** Features Atomic Write and Secure Delete (overwriting the original file with `0x00` bytes before deletion).
-- **Memory Optimization:** Employs a streaming technique (64KB chunks) for smooth processing of massive files without RAM overflow.
+- **Military-grade encryption:** Utilizes the `AES-256-CBC` algorithm.
+- **Anti-tampering (Data Integrity):** Implements the `Encrypt-then-MAC` standard with `HMAC-SHA256` signatures.
+- **Anti-Brute-force:** Key derivation using `PBKDF2` with 1,000,000 iterations.
+- **True Locker mechanism:** Features Atomic Write and Secure Delete (safe destruction of the original file).
+- **RAM Optimization:** Applies the Streaming technique (reading in 64KB chunks) to smoothly process massive files.
 
 ## 💻 Source Code Structure
-The project is designed with a Modular Architecture, strictly separating the User Interface from the Cryptographic Engine:
+The project is designed with a Modular architecture, completely separating the User Interface from the Algorithm Core:
 1. `config.py`: Configuration file for cryptographic constants.
-2. `core_crypto.py`: The mathematical core handling AES, HMAC, and PBKDF2 operations.
-3. `utils.py`: Gatekeeper utilities for input validation, error handling, and CLI progress bar rendering.
-4. `main.py`: The main entry point, serving as the CLI interface to coordinate the system securely (e.g., hiding password inputs).
-5. `test_demo.py`: An automated testing script simulating a hacker tampering with the ciphertext.
+2. `core_crypto.py`: The mathematical core handling AES and HMAC processing.
+3. `utils.py`: Gatekeeper utilities (Validation) and progress bar rendering.
+4. `main.py`: The main program, serving as the CLI interface to coordinate the system.
+5. `test_demo.py`: Automated testing script simulating a hacker tampering with the file.
 
 ## 🛠 How to Run
-
-**1. Clone the repository and set up the environment:**
-It is recommended to use a virtual environment (`venv`).
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+1. Install the required library: `pip install pycryptodome`
+2. Run the system: `python main.py`
+3. Run the test script: `python test_demo.py`
