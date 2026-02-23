@@ -1,0 +1,31 @@
+2026-02-23 21:36:33,673 | INFO | --- HỆ THỐNG AES FILE LOCKER KHỞI ĐỘNG ---
+2026-02-23 21:37:08,363 | INFO | === BẮT ĐẦU MÃ HÓA: tai_lieu.txt ===
+2026-02-23 21:37:08,364 | INFO | [BƯỚC 1] Khởi tạo tham số ngẫu nhiên -> Salt: 7567421b9cd1a751c58952d08b13940a | IV: 7d83d31dabdc51f2e51f63b9486f84df
+2026-02-23 21:37:10,349 | INFO | [BƯỚC 2] Đúc khóa PBKDF2 (1000000 vòng) -> AES Key: 75ae5bbd0067f1e280a7fa574b25bfd70969f99fb180e1711e8e5d87d1b5c7a4 | HMAC Key: 8deb6fa14c9a39ae4019e93ae6c845e27e31f56cec4fc251ddf9950ed3d79092
+2026-02-23 21:37:10,353 | INFO | [BƯỚC 3] Đang mã hóa luồng dữ liệu (Chunk: 64KB)...
+2026-02-23 21:37:10,353 | INFO | [BƯỚC 4] Chữ ký toàn vẹn (HMAC-SHA256) sinh ra: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:37:10,354 | INFO | === HOÀN TẤT MÃ HÓA THÀNH CÔNG: tai_lieu.txt.enc ===
+2026-02-23 21:37:10,354 | INFO | Đã tiêu hủy an toàn file gốc: tai_lieu.txt
+2026-02-23 21:37:28,370 | INFO | === BẮT ĐẦU GIẢI MÃ: tai_lieu.txt.enc ===
+2026-02-23 21:37:28,371 | INFO | [BƯỚC 1] Trích xuất siêu dữ liệu -> Salt: 7567421b9cd1a751c58952d08b13940a | IV: 7d83d31dabdc51f2e51f63b9486f84df | HMAC Gốc: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:37:30,357 | INFO | [BƯỚC 2] Tái tạo khóa thành công từ Mật khẩu người dùng.
+2026-02-23 21:37:30,357 | INFO | [BƯỚC 3] HMAC tự tính toán để đối chiếu: b50b869667a182d6b4f63dc1cdc1e5efd45fea98f83866b5336d0b430be24bb0
+2026-02-23 21:37:30,357 | WARNING | [CẢNH BÁO] Xác thực HMAC THẤT BẠI. File bị sửa đổi hoặc sai mật khẩu!
+2026-02-23 21:37:34,281 | INFO | === BẮT ĐẦU GIẢI MÃ: tai_lieu.txt.enc ===
+2026-02-23 21:37:34,281 | INFO | [BƯỚC 1] Trích xuất siêu dữ liệu -> Salt: 7567421b9cd1a751c58952d08b13940a | IV: 7d83d31dabdc51f2e51f63b9486f84df | HMAC Gốc: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:37:36,267 | INFO | [BƯỚC 2] Tái tạo khóa thành công từ Mật khẩu người dùng.
+2026-02-23 21:37:36,267 | INFO | [BƯỚC 3] HMAC tự tính toán để đối chiếu: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:37:36,267 | INFO | [BƯỚC 4] KẾT QUẢ: Xác thực HMAC THÀNH CÔNG. File an toàn, cho phép giải mã.
+2026-02-23 21:37:36,267 | INFO | === HOÀN TẤT GIẢI MÃ THÀNH CÔNG: tai_lieu.txt ===
+2026-02-23 21:40:29,205 | INFO | === BẮT ĐẦU GIẢI MÃ: tai_lieu.txt.enc ===
+2026-02-23 21:40:29,207 | INFO | [BƯỚC 1] Trích xuất siêu dữ liệu -> Salt: 7567421b9cd1a751c58952d08b13940a | IV: 7d83d31dabdc51f2e51f63b9486f84df | HMAC Gốc: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:40:31,193 | INFO | [BƯỚC 2] Tái tạo khóa thành công từ Mật khẩu người dùng.
+2026-02-23 21:40:31,193 | INFO | [BƯỚC 3] HMAC tự tính toán để đối chiếu: ac9c92e3f2dc0c847ca86edb81335ad61cdc7e377031b972c1f5f6af3dd404b7
+2026-02-23 21:40:31,193 | WARNING | [CẢNH BÁO] Xác thực HMAC THẤT BẠI. File bị sửa đổi hoặc sai mật khẩu!
+2026-02-23 21:40:34,381 | INFO | === BẮT ĐẦU GIẢI MÃ: tai_lieu.txt.enc ===
+2026-02-23 21:40:34,382 | INFO | [BƯỚC 1] Trích xuất siêu dữ liệu -> Salt: 7567421b9cd1a751c58952d08b13940a | IV: 7d83d31dabdc51f2e51f63b9486f84df | HMAC Gốc: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:40:36,367 | INFO | [BƯỚC 2] Tái tạo khóa thành công từ Mật khẩu người dùng.
+2026-02-23 21:40:36,367 | INFO | [BƯỚC 3] HMAC tự tính toán để đối chiếu: eabb8b1875b7bb8e935eef6eb3ee14f98d5656989c206a14e363f8b308b85595
+2026-02-23 21:40:36,367 | INFO | [BƯỚC 4] KẾT QUẢ: Xác thực HMAC THÀNH CÔNG. File an toàn, cho phép giải mã.
+2026-02-23 21:40:36,368 | INFO | === HOÀN TẤT GIẢI MÃ THÀNH CÔNG: tai_lieu.txt ===
+2026-02-23 21:40:38,042 | INFO | --- HỆ THỐNG ĐÓNG AN TOÀN ---
